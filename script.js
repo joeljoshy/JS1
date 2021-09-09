@@ -1,21 +1,21 @@
-const nameEl = document.querySelector('#name');
+const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 const form = document.querySelector('#signup');
 
-const checkName = () => {
+const checkUsername = () => {
 
   let valid = false;
 
   const min = 3,
       max = 25;
 
-  const name = nameEl.value.trim();
+  const username = usernameEl.value.trim();
 
-  if (!isRequired(name)) {
-      showError(nameEl, 'Name cannot be blank.');
+  if (!isRequired(username)) {
+      showError(usernameEl, 'Name cannot be blank.');
   } 
   else {
-      showSuccess(nameEl);
+      showSuccess(usernameEl);
       valid = true;
   }
   return valid;
